@@ -10,15 +10,15 @@
 
 
     <div class="column">
-<img src="/sources/main/information_on_emergency_situations/g.jpg">
-<img src="/sources/main/information_on_emergency_situations/g1.jpg">
-<img src="/sources/main/information_on_emergency_situations/g2.jpg">
-<img src="/sources/main/information_on_emergency_situations/g3.jpg">
-<img src="/sources/main/information_on_emergency_situations/g4.jpg">
-<img src="/sources/main/information_on_emergency_situations/g5.jpg">
-<img src="/sources/main/information_on_emergency_situations/g6.jpg">
-<img src="/sources/main/information_on_emergency_situations/g7.jpg">
-</div> 
+        <div><img src="/sources/main/information_on_emergency_situations/g.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g1.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g2.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g3.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g4.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g5.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g6.jpg"></div>
+        <div><img src="/sources/main/information_on_emergency_situations/g7.jpg"></div>
+    </div> 
 </font>
 	
 		

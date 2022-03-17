@@ -69,9 +69,8 @@ p{
     gap: 2px;
 }
 
-
-
-.column img{
+.column div{
+    width: 100%;
     text-align: center;
 }
 
