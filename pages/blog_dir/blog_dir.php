@@ -11,7 +11,7 @@
 			<div class="inside">	
 	
 	<!-- /*ИСПРАВИТЬ*/  -->
-	<div class="image_block">
+	<div class="center_image">
         <img src="/sources/blog_dir/dir.jpg" alt="image">
     </div>
 
