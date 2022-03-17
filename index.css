@@ -59,6 +59,20 @@ p{
 
 .center_image{
     text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.column{
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+}
+
+
+
+.column img{
+    text-align: center;
 }
 
 /* 
