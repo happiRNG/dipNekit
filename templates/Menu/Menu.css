@@ -1,0 +1,59 @@
+.menu{
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    background: #0470D4;
+    border-radius: 40px;
+    margin-top: 50px;
+    padding: 20px;
+
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.menu div{
+    position: relative;
+    padding: 5px 0;
+}
+
+.menu div:hover{
+    cursor: pointer;
+    background: #107addcb;
+}
+
+/* Всплывающий лист */
+.menu div .menu__list{
+    z-index: 1;
+    position: absolute;
+    background: #103662;
+    border-radius: 10px;
+}
+
+.list{
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.list:hover{
+    cursor: pointer;
+    background: #124b8b;
+    border-radius: 10px;
+}
+
+.list_active{display: block;}
+
+.list_noactive{display: none;}
+
+.list:nth-last-child(1){
+    border-bottom: 0;
+}

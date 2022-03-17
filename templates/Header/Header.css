@@ -1,0 +1,28 @@
+.header{
+    position: relative;
+    height: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header p{
+    font-size: 40px;    
+    line-height: 47px;
+}
+
+.rightBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightBlock p{
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.rightBlock p:nth-child(1){
+    margin-bottom: 32px;
+}

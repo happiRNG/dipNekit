@@ -1,0 +1,41 @@
+.left_menu_wrapper{
+    width: 480px;
+    /* background: red; */
+
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.left_menu_wrapper > img{
+    margin: 42px 0 60px 0;
+}
+
+.left_menu_wrapper .top_button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 70px;
+
+    background: #0470D4;
+    border-radius: 40px;
+
+    margin: 40px 0 90px 40px;
+}
+
+.left_menu_wrapper .calendar{
+    width: 430px;
+    height: 722px;
+
+    background: #0470d44d;
+    border-radius: 12px;
+    margin-bottom: 104px;
+}
+
+.left_menu_wrapper .image_block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
