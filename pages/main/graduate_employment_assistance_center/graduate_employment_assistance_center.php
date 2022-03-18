@@ -14,7 +14,7 @@
 
 
 
-<a href=https://www.minzdrav.orb.ru/programmy-v-sfere-zdravookhraneniya/edinovremennie/> Информация о перечне вакантных должностей, при замещении которых осуществляются единовременные компенсационные выплаты</b></a>	
+<a href=https://www.minzdrav.orb.ru/programmy-v-sfere-zdravookhraneniya/edinovremennie> Информация о перечне вакантных должностей, при замещении которых осуществляются единовременные компенсационные выплаты</b></a>	
 <br>
 
 <a href=http://www.minzdrav.orb.ru/index.php/2012-08-17-10-49-52> Помощь студенту при трудоустройстве. Вакансии медицинских организаций г.Оренбурга и Оренбургской области.</b></a>	
