@@ -4,11 +4,10 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/body.php' ?>
     <div class="card">
         
-    <!-- <link rel="stylesheet" href="http://www.medcollegelib.ru/patrns/bootstrap.min-1099.css"> -->
-    <!-- <link rel="stylesheet" href="http://www.medcollegelib.ru/patrns/studmedlib-custom-1099.css"> -->
+    <!-- <link rel="stylesheet" href="http://www.medcollegelib.ru/patrns/bootstrap.min-1099.css">
+    <link rel="stylesheet" href="http://www.medcollegelib.ru/patrns/studmedlib-custom-1099.css"> -->
   
-<div class="text_selector" style="display:none;z-index:10001;" id="text_selector"></div><div class="scrchdate" style="display:none;position:absolute;top:49px;left:49px;z-index:10000;" id="m1scr"></div><table class="rds_popup" style="display:none;position:absolute;z-index:100;" id="rds_popup"><tr><td><div class="rds_popup_cntt" id="rds_popup_cntt"><a href="#">Справка</a></div></td></tr></table><div id="popup_image" style="position:absolute;top:49px;left:49px;z-index:10000;display:none;"></div><div id="popup_message" style="display:none;" class="popup_message"></div><div id="uni_dialog" style="display:none;" class="uni_dialog"></div>
-<div id='page_content' class="wrap-page-content mockup-botkin botkin-mode">
+<div class="text_selector" style="display:none;z-index:10001;" id="text_selector"></div><div class="scrchdate" style="display:none;position:absolute;top:49px;left:49px;z-index:10000;" id="m1scr"></div><table class="rds_popup" style="display:none;position:absolute;z-index:100;" id="rds_popup"><tr><td><div class="rds_popup_cntt" id="rds_popup_cntt"><a href="#">Справка</a></div></td></tr></table><div id="popup_image" style="position:absolute;top:49px;left:49px;z-index:10000;display:none;"></div><div id="popup_message" style="display:none;" class="popup_message"></div><div id="uni_dialog" style="display:none;" class="uni_dialog"></div><div id='page_content' class="wrap-page-content mockup-botkin botkin-mode">
   <div class="slide-wrap">
     <div class="content"><div id='rds2pp_guide_rgu.main_frame.entry' class="for-scroll">
   <div id='header_top_college' class="top-medcollege">
@@ -34,7 +33,7 @@
   
 </div>
   <div id="slide_menu" class="menu-wrap">
-  <nav class="menu">
+  
     
    
       
@@ -45,7 +44,7 @@
 </div></div>
     </div>
   </nav>
-  <button type="button" class="close-button" id="close-button">Закрыть меню</button>
+
 </div>
   <div id="errors_ok" class="plus-cont">
   <div class='wrap-ssp-message container'><div class="wrap-ssp"></div></div>
@@ -56,7 +55,7 @@
       <div class="tabpanel">
         
         <ul class="ul-tabs-style-1 media-orient" role="tablist">
-          <li role="presentation" class="li-tab li-tab-current"><a href="http://www.medcollegelib.ru/cur_user/entry.html?SSr=46013489a020ffffffff27c__07e60314142e06-41be" role="tab"></i>Вход</a></li>
+          <!-- <li role="presentation" class="li-tab li-tab-current"><a href="http://www.medcollegelib.ru/cur_user/entry.html?SSr=46013489a020ffffffff27c__07e60314142e06-41be" role="tab"></i>Вход</a></li> -->
           <li role="presentation" class="li-tab"><a href="http://www.medcollegelib.ru/cur_user/reg.html?SSr=46013489a020ffffffff27c__07e60314142e06-41be" role="tab"></i>Регистрация</a></li>
           <li role="presentation" class="li-tab"><a href="http://www.medcollegelib.ru/cur_user/pwrestore.html?SSr=46013489a020ffffffff27c__07e60314142e06-41be" role="tab"></i>Восcтановить пароль</a></li>
         </ul>
