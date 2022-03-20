@@ -1,5 +1,5 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/head.php' ?>
-    <link rel="stylesheet" href="world_skills.css">
+    <link rel="stylesheet" href="historical_background.css">
     <title>Главная</title>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/body.php' ?>
     <div class="card">
@@ -26,7 +26,7 @@
 
 
 <!-- ИСПРАВИТЬ -->
-
+<div class = "column" >
 <table align="center">
   <tr>
     <td align="center">
@@ -129,7 +129,7 @@
 		
 		<ul class="mlist">
 </ul>
-
+</div>	
 	</div>
 </div>	
     </div>

@@ -1,0 +1,17 @@
+.center_image{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.column{
+    display: grid;
+    justify-content: center;
+    gap: 2px;
+}
+
+.column div{
+    width: 100%;
+    text-align: center;
+    flex-direction: column 1fr 1fr 1fr;
+}

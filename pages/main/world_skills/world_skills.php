@@ -30,8 +30,9 @@
 
 
 <!-- /*ИСПРАВИТЬ*/  -->
+<div class = "column">	
 <iframe  width="560" height="315" src="https://www.youtube.com/embed/KdjxkfEQjRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 
     <p style="text-indent:20px;" align="justify">#WorldSkillsRussia
     <p style="text-indent:20px;" align="justify">#отборочныесоревнования2020

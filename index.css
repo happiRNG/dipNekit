@@ -4,8 +4,9 @@
     outline: none;
 }
 a{
-    color: #000000;
+    color: #8B008B;
     text-decoration: none;
+    font-size: 25px;
 }
 body{
     box-sizing: border-box;
