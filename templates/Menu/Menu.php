@@ -22,10 +22,10 @@
             'Социально-воспитательные работы':"/pages/main/social_and_educational_work/social_and_educational_work.php",
             'Информация по ГС ЧС':"/pages/main/information_on_emergency_situations/information_on_emergency_situations.php",
             'Конкурсы':"/pages/main/contests/contests.php",
+            '0':"/",
         },
-        
         "Контакты":{
-            'Cont' : "/pages/contacts/contacts.php" ,
+            '0' : "/pages/contacts/contacts.php" ,
             
         },
         "Студенту":{
@@ -83,15 +83,19 @@
         },
     }
 
-    Object.keys(menuLists).map(key => {
-        const tempMenuList = document.createElement('div')
-        const tempDiv = document.createElement('div')
+    Object.keys(menuLists).map(key => { //проход по разделам меню
+        const tempAMain = document.createElement('a')//для того чтобы сделать ссылку на саму кнопку раздела
+        const tempMenuList = document.createElement('div') //список пунктов раздела меню
+        const tempDiv = document.createElement('div') //Раздел меню
         
         tempDiv.textContent = key
-
         tempMenuList.className = 'menu__list list_noactive'
 
+        tempAMain.href = menuLists[key]['0']
+
         Object.keys(menuLists[key]).map((ind) => {
+            if (ind === '0') return
+
             const tempList = document.createElement('div')
             const tempA = document.createElement('a')
 
@@ -118,6 +122,7 @@
         }
         
         tempDiv.append(tempMenuList)
-        menu.append(tempDiv)
+        tempAMain.append(tempDiv)
+        menu.append(tempAMain)
     })
 </script>

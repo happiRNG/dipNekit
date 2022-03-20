@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-.left_menu_wrapper > img{
+.left_menu_wrapper > a{
+    display: block;
     margin: 42px 0 60px 0;
 }
 
@@ -26,10 +27,14 @@
 }
 
 .left_menu_wrapper .calendar{
-    width: 430px;
-    height: 722px;
+    /* width: 430px; */
+    /* height: 722px; */
 
-    background: #0470d44d;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+
+    /* background: #0470d44d; */
     border-radius: 12px;
     margin-bottom: 104px;
 }
@@ -38,4 +43,3 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-

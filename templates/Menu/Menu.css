@@ -24,6 +24,10 @@
     padding: 5px 0;
 }
 
+.menu a{
+    color: #FFFFFF;
+}
+
 .menu div:hover{
     cursor: pointer;
     background: #107addcb;
