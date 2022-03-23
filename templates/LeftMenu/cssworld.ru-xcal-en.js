@@ -20,7 +20,7 @@ w: "Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><t
 	}
 }
 var def = {
-	lang: "en", // en/ru
+	lang: "ru", // en/ru
 	id: "",
 	"class": "xcalend",
 	delim: ".",

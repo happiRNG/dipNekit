@@ -29,6 +29,7 @@
             
         },
         "Студенту":{
+            '0':"/pages/students/schedule_of_education/schedule_of_education.php",
             'График учебной и произвоственной практики':"/pages/students/schedule_of_education/schedule_of_education.php",
             'График промежуточных и итоговых аттестаций':"/pages/students/certification_schedule/certification_schedule.php",
             'Предметные кружки и студенческое научное общество':"/pages/students/circles/circles.php",
@@ -37,10 +38,11 @@
             'Студенческий профсоюз':"/pages/students/trade_union_organization/trade_union_organization.php",
         },
         "Блог директора":{
-            'B' : "/pages/blog_dir/blog_dir.php",
+            '0' : "/pages/blog_dir/blog_dir.php",
             
         },
         "Сведения об образовательно организации":{
+            '0':"/pages/information_about_the_organization/information_basic/information_basic.php",
             'Основные сведения':"/pages/information_about_the_organization/information_basic/information_basic.php",
             'Структура и органы управления образовательной организацией':"/pages/information_about_the_organization/college_structure/college_structure.php",
             'Документы' :"/pages/information_about_the_organization/document/document.php",
@@ -56,16 +58,18 @@
             
         },
         "Поступающему":{
-            'incoming' :"/pages/incoming/incoming.php"
+            '0' :"/pages/incoming/incoming.php"
 
         },
         "Библиотека":{
+            '0':"/pages/lib/about_lib/about_lib.php",
             'О библиотеке':"/pages/lib/about_lib/about_lib.php",
             'К читателю':"/pages/lib/to_reader/to_reader.php",
             'Знаменательные даты':"/pages/lib/date/date.php",
             'Электорнная библиотека колледжа':"/pages/lib/elec_lib/elec_lib.php",
         },
         "Отделение повышения квалификации":{
+            '0':"/pages/department_training/department_training/department_training.php",
             'Основные сведения':"/pages/department_training/department_training/department_training.php",
             'План учебных циклов':"/pages/department_training/study_cycle/study_cycle.php",
             'Национальный стандарты':"/pages/department_training/national_standards/national_standards.php",
