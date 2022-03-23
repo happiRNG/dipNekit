@@ -3,9 +3,9 @@
 <script src="/templates/LeftMenu/cssworld.ru-xcal-en.js"></script>
 <link rel="stylesheet" type="text/css" href="/templates/LeftMenu/cssworld.ru-xcal.css" />
 
-<script lang="javascript" src="js-xlsx/dist/xlsx.core.min.js"></script>
-<script src="js-xlsx/dist/cpexcel.js"></script>
-<script src="js-xlsx/dist/ods.js"></script>
+<script lang="javascript" src="/js-xlsx/dist/xlsx.core.min.js"></script>
+<script src="/js-xlsx/dist/cpexcel.js"></script>
+<script src="/js-xlsx/dist/ods.js"></script>
 
 <script>
    
