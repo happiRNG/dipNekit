@@ -3,13 +3,169 @@
 <script src="/templates/LeftMenu/cssworld.ru-xcal-en.js"></script>
 <link rel="stylesheet" type="text/css" href="/templates/LeftMenu/cssworld.ru-xcal.css" />
 
+<script lang="javascript" src="js-xlsx/dist/xlsx.core.min.js"></script>
+<script src="js-xlsx/dist/cpexcel.js"></script>
+<script src="js-xlsx/dist/ods.js"></script>
+
+<script>
+   
+
+    const clickOnDate = (date) => {
+        var select = document.getElementById('group_id')
+
+        select.addEventListener('change', (e) => {
+            selectedGroup(e.target.value)
+        })
+
+        schedule.forEach((group, ind) => {
+            var option = document.createElement('option')
+
+            option.textContent = group.name
+            option.value = ind
+
+            select.appendChild(option)
+        })
+        
+    }
+
+    const selectedGroup = (index) => {
+        var block = document.getElementById('schedule_block')
+        block.innerHTML =''
+        // console.log(index); 
+        schedule[index].lesson.forEach((les) => {
+            var p1 = document.createElement('p')
+            var p2 = document.createElement('p')
+            var p3 = document.createElement('p')
+
+            p1.textContent = les.name
+            p2.textContent = les.teacher
+            p3.textContent = les.room
+
+            block.append(p1)
+            block.append(p2)
+            block.append(p3)
+        })
+    }
+
+        /* set up XMLHttpRequest */
+        var url = "/templates/LeftMenu/rasp/Rasp.-na-.23.03.2022..xlsx";
+        var oReq = new XMLHttpRequest();
+
+        oReq.open("GET", url, true);
+        oReq.responseType = "arraybuffer";
+
+        var schedule = [
+                // 
+                // пример заполнения данными
+                // 
+                // { 
+                //     name: '21КСК-1',
+                //     lesson: [
+                //         {
+                //             name: 'Математика',
+                //             teacher: 'Ходырева И.С.',
+                //             room: '1116',
+                //         }
+                //     ]
+                // }
+            ]
+
+        oReq.onload = function(e) {
+            var arraybuffer = oReq.response;
+
+            /* convert data to binary string */
+            var data = new Uint8Array(arraybuffer);
+            var arr = new Array();
+            for(var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+            var bstr = arr.join("");
+
+            /* Call XLSX */
+            var workbook = XLSX.read(bstr, {type:"binary"});
+
+            var sheet_name_list = workbook.SheetNames[0];
+
+            var worksheet = workbook.Sheets[sheet_name_list];
+
+            var i = 0;//индекс строки в массиве
+            var k = 0;//индекс столбца в массиве
+            var everyFourIndex = 1; //для отслеживания каждого четвертого столбца
+            var saveRow = 2;//метка для определения новой строки
+
+            for (z in worksheet) {
+                if(z[0] === '!') continue;
+
+                const newRow = parseInt(z.match(/\d+/))//получаем номер строки в exel
+
+                if (newRow != saveRow) { //если новая строка сбрасываем счетчик столбцов
+                    // console.log('newRow', newRow);
+                    // console.log('saveRow', saveRow);
+                    // console.log('i', i);
+                    k = 0
+                    i++
+                    saveRow = newRow
+                    everyFourIndex = 1
+                }
+
+                if(k%4 != 0 && i == 0) { //пропускаем все кроме каждого 4 столбца 0 строки
+                    k++; 
+                    continue;
+                }
+                
+                //следующий код выполняется для каждого 4 столбца n строки
+                if(i == 0) {//если 0 строка добовляем в массив 
+                    schedule.push({
+                        name: worksheet[z].v,
+                        lesson: []
+                    })
+                }
+                else{
+                    
+                    if(k%4 == 0) {//для выполняния действий с каждым 4 столбцом
+                        if(!schedule[k/4]) continue
+                        
+                        if (i%2 != 0){//для чередования действий по строкам
+                            
+                            let ind = Math.floor(i/2)
+                            let col = Math.floor(k/4)
+                            
+                            if (typeof schedule[col].lesson[ind] != 'object') schedule[col].lesson[ind] = {}
+                            schedule[col].lesson[ind].name = worksheet[z].v
+                        } else {                           
+                            let col = Math.floor(k/4)
+                            let ind = i/2-1
+
+                            schedule[col].lesson[ind].teacher = worksheet[z].v
+                        }
+                    }
+
+                    if(everyFourIndex >= 4) { //для выполняния действий с каждым 3 столбцом
+                        if (i%2 != 0){
+                            let ind = Math.floor(i/2)
+                            let col = Math.floor(k/4)
+
+                            schedule[col].lesson[ind].room = worksheet[z].v
+                        }
+                        everyFourIndex = 0
+                    }
+                }
+                
+                k++
+                everyFourIndex++
+            }
+        }
+
+        oReq.send();
+
+</script>
+
+
 <div class="left_menu_wrapper">
     <div class="top_button">
         <img id="specialButton" src="/sources/left_menu/back_view.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ">
     </div>
 
 
-    <div class="calendar">
+    <div id="calendar_block" class="calendar">
         <div id="date8"></div>
         <style>#cssworldru8{position: static}</style>
         <script>
@@ -23,6 +179,13 @@
             fn: "alert" // Вызвать функцию с указанным названием, в нее будет передан результат выбора
             });
         </script>
+
+        Расписание для:<br>
+        <select id="group_id">
+            <option value="-1" >Выберите группу</option>
+        </select>
+
+        <div id="schedule_block"></div>
     </div>
 
   

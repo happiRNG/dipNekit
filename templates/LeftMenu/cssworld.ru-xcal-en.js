@@ -271,7 +271,8 @@ for(var i=0; i<k.length; i++) {
 		}
 		a=xCal.gDop(a);
 		a.dat=t;
-		if(typeof a.f==="function") a.f(a.id);
+		if(typeof a.f==="function") clickOnDate(a.id)
+		//  alert('123465', a.id)//a.f(a.id);
 	}
 }
 var r=document.querySelector("#"+a.id+" tbody td.cal-l");
