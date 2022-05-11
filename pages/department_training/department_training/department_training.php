@@ -1,6 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/head.php' ?>
     <link rel="stylesheet" href="department_training.css">
-    <title>Главная</title>
+    <title>Отдел повышения квалификации</title>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/body.php' ?>
     <div class="card">
     <br><b>Контактная информация:</b>

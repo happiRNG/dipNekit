@@ -1,6 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/head.php' ?>
     <link rel="stylesheet" href="blog_dir.css">
-    <title>Главная</title>
+    <title>Блог Директора</title>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/body.php' ?>
 <div class="card">
 <div class="portlet">

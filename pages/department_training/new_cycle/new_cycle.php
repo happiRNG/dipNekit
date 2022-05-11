@@ -1,6 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/head.php' ?>
     <link rel="stylesheet" href="world_skills.css">
-    <title>Главная</title>
+    <title>Новые кружки</title>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/body.php' ?>
     <div class="card">
     <p style="text-indent:20px;" align="justify">  

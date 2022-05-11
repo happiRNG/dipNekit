@@ -1,6 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/head.php' ?>
     <link rel="stylesheet" href="elec_education.css">
-    <title>Главная</title>
+    <title>Электронное обучение</title>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/page/body.php' ?>
     <div class="card">
     <p style="text-indent:20px;" align="justify">
