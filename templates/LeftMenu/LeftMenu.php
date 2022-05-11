@@ -31,20 +31,42 @@
     const selectedGroup = (index) => {
         var block = document.getElementById('schedule_block')
         block.innerHTML =''
-        // console.log(index); 
+        var table = document.createElement('table')
+
+        table.className = 'table_raspisanie'
+
         schedule[index].lesson.forEach((les) => {
-            var p1 = document.createElement('p')
-            var p2 = document.createElement('p')
-            var p3 = document.createElement('p')
+            var tr1 = document.createElement('tr')
+            var tr2 = document.createElement('tr')
+            var td1 = document.createElement('td')
+            var td2 = document.createElement('td')
+            var td3 = document.createElement('td')
 
-            p1.textContent = les.name
-            p2.textContent = les.teacher
-            p3.textContent = les.room
+            td1.textContent = les.name
+            td2.textContent = les.teacher
+            td3.textContent = les.room
 
-            block.append(p1)
-            block.append(p2)
-            block.append(p3)
+            tr1.append(td1)
+            tr1.append(td3)
+            tr2.append(td2)
+
+            table.append(tr1)
+            table.append(tr2)
+
+            
+            // var p1 = document.createElement('p')
+            // var p2 = document.createElement('p')
+            // var p3 = document.createElement('p')
+
+            // p1.textContent = les.name
+            // p2.textContent = les.teacher
+            // p3.textContent = les.room
+
+            // block.append(p1)
+            // block.append(p2)
+            // block.append(p3)
         })
+        block.append(table)
     }
 
         /* set up XMLHttpRequest */
@@ -155,7 +177,7 @@
         }
 
         oReq.send();
-
+        
 </script>
 
 

@@ -75,9 +75,15 @@ p{
     text-align: center;
 }
 
+
+
 /* 
 //
+//
+//
 //Компоненты
+//
+//
 //
 */
 
@@ -92,5 +98,15 @@ p{
         padding: 20px;
 }
 
+/* Таблица с расписанием */
+.table_raspisanie{
+    margin-top: 10px;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+}
 
+.table_raspisanie tr td{
+    /* padding: 5px; */
+    border: 1px solid black;
+}
 
